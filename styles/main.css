@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg , rgba(0, 48, 73 , 1) , rgba(0, 48, 73 , 1));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tood {
+    padding-inline: 50px;
+    padding-block: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todoContainer {
+    background: white;
+    border-radius: 20px ;
+    min-height: 70vh;
+    width: 100%;
+    padding-block: 2rem;
+}
+
+.todoForm {
+    width: 50%;
+    margin: 0 auto 1.5rem;
+    padding: 1rem;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+
+}
+.todoForm input,select {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    height: 6vh;
+    outline: 0;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 16px;
+    padding-inline-start: 1.5rem;
+}
+.todoForm button {
+    width: 10rem;
+    height: 5vh;
+    background: #003049;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.todoTasksContainer {
+    width: 50%;
+    margin: auto;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 1rem;
+}
+.todoTasksContainer table {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.todoTasksContainer table tr {
+    line-height: 2.5;
+    position: relative;
+    
+}
+.todoTasksContainer table tr::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, .2);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.todoTasksContainer table tr:nth-of-type(1)::after{
+    background: rgba(0, 0, 0, .8);
+}
+.todoTasksContainer table tr:not(:nth-of-type(1)):nth-of-type(even){
+    background: rgba(0, 0, 0, .2);
+}
+.todoTasksContainer table tr:nth-last-of-type(1)::after{
+    background: transparent;
+}
+
+.todoTasksContainer table tr button {
+    background: transparent;
+    border: 0;
+
+}
+.editBtn {
+    color: #003049;
+}
+.deleteBtn{
+    color: #c1121f;
+}
+#updataTaskBtn {
+    background: #344e41;
+}
+
+.deactive{
+    display: none;
+}
+#searchInput {
+    width: 50%;
+    height: 5vh;
+    outline: 0;
+    border: 2px solid rgba(0, 0, 0, .2);
+    margin: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+    display: block;
+    padding-inline-start: 1.5rem;
+}
